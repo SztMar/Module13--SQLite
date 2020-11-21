@@ -3,7 +3,7 @@ from flask import Flask, request, render_template, redirect, url_for
 from form import TodoForm
 from models import todos
 import sqlite3 
-import views
+
 
 app = Flask(__name__)
 
