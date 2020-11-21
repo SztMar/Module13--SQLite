@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu tworzymy todo i widzimy listę</title>
+    <style>
+        table, th, tr, td {border: 1px solid black;}
+    </style>
+</head>
+
+<h2>Lista zadań możliwych do usunięcia</h2>
+
+<table>
+    <thead>
+    <th>Key</th>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Status</th>
+    </thead>
+{% for delete in todos %}
+    <tr>
+        <td><a href="/todos/delete/{{ loop.index }}">{{ delete.Key }}</a></td>
+        <td>{{ delete.title }}</td>
+        <td>{{ delete.description }}</td>
+        <td>{{ delete.status }}</td>
+    </tr>
+{% endfor %}
+</table>
+
+</body>
+</html>

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "book": "Hobbit", 
+        "author": "J.R.R Tolkien", 
+        "year": "1980", 
+        "pages": "300", 
+        "read": "NO"
+        }, 
+        
+    {
+        "id": 2,
+        "book": "Harry Potter. Insygnia Smierci", 
+        "author": "J.K. Rowling", 
+        "year": "2000", 
+        "pages": 330, 
+        "read": "YES"
+        }
+    
+    ]
